@@ -1,0 +1,12 @@
+{
+	"name": "Blockchain Transaction History SDK",
+	"includeVersion": true,
+	"entryPoints": ["src/index.ts"],
+	"exclude": ["**/*+(.test|.spec|.e2e).ts", "**/mocks/**", "**/examples/**"],
+	"out": "docs",
+	"readme": "README.md",
+	"theme": "default",
+	"excludePrivate": true,
+	"excludeProtected": true,
+	"excludeInternal": true
+}

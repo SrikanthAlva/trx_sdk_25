@@ -1,0 +1,53 @@
+{
+	"name": "ts_sdk_assignment_25",
+	"version": "1.0.0",
+	"main": "./dist/cjs/index.js",
+	"types": "./dist/types/index.d.ts",
+	"module": "./dist/esm/index.js",
+	"source": "./src/index.ts",
+	"scripts": {
+		"build": "npm run clean && npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc -p tsconfig.cjs.json",
+		"build:esm": "tsc -p tsconfig.esm.json",
+		"clean": "rm -rf dist",
+		"test": "vitest",
+		"docs": "typedoc"
+	},
+	"files": [
+		"dist/cjs",
+		"dist/esm",
+		"dist/types"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/types/index.d.ts",
+			"require": "./dist/cjs/index.js",
+			"import": "./dist/esm/index.js",
+			"default": "./dist/esm/index.js"
+		}
+	},
+	"keywords": [
+		"sdk",
+		"typescript",
+		"blockchain",
+		"ethereum",
+		"solana",
+		"transactions",
+		"crypto",
+		"web3"
+	],
+	"author": "",
+	"license": "ISC",
+	"description": "TypeScript SDK for fetching transaction history from Ethereum Mainnet and Solana Mainnet Addresses",
+	"devDependencies": {
+		"@types/node": "^25.0.3",
+		"typedoc": "^0.28.15",
+		"typescript": "^5.9.3",
+		"vitest": "^4.0.16"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/srikanthalva/ts_sdk_assignment_25.git"
+	}
+}
