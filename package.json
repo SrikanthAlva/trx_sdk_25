@@ -1,5 +1,5 @@
 {
-	"name": "ts_sdk_assignment_25",
+	"name": "trx_sdk_25",
 	"version": "1.0.0",
 	"main": "./dist/cjs/index.js",
 	"types": "./dist/types/index.d.ts",
@@ -48,6 +48,6 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/srikanthalva/ts_sdk_assignment_25.git"
+		"url": "git+https://github.com/srikanthalva/trx_sdk_25.git"
 	}
 }
